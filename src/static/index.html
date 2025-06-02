@@ -5,6 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mergington High School Activities</title>
     <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Add pretty styling for participants section */
+      .participants-section {
+        background: #f8f9fa;
+        border-radius: 8px;
+        margin-top: 1em;
+        padding: 0.75em 1em;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+      }
+      .participants-section h4 {
+        margin: 0 0 0.5em 0;
+        font-size: 1em;
+        color: #333;
+      }
+      .participants-list {
+        margin: 0;
+        padding-left: 1.2em;
+        color: #555;
+      }
+      .participants-list li {
+        margin-bottom: 0.2em;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -18,6 +41,18 @@
         <div id="activities-list">
           <!-- Activities will be loaded here -->
           <p>Loading activities...</p>
+          <!--
+            Each activity card should include:
+            <div class="activity-card">
+              ...activity info...
+              <div class="participants-section">
+                <h4>Participants</h4>
+                <ul class="participants-list">
+                  <!-- List of participants will be rendered here by JS -->
+                </ul>
+              </div>
+            </div>
+          -->
         </div>
       </section>
 
@@ -26,7 +61,12 @@
         <form id="signup-form">
           <div class="form-group">
             <label for="email">Student Email:</label>
-            <input type="email" id="email" required placeholder="your-email@mergington.edu" />
+            <input
+              type="email"
+              id="email"
+              required
+              placeholder="your-email@mergington.edu"
+            />
           </div>
           <div class="form-group">
             <label for="activity">Select Activity:</label>
